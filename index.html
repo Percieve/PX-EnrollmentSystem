@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arellano University Enrollment System</title>
+</head>
+<body>
+    <div class="background-overlay">
+    </div>
+        <div class="webform">
+            <div class="webform-header">
+                <img src="https://dev.arellano.edu.ph/sites/default/files/inline-images/new-au-logo.png" class="aulogo">
+                <h1>AU JOSE RIZAL CAMPUS ENROLLMENT SYSTEM</h1>
+            </div>
+            <header>
+                <div class="webform-menu">
+                    <a href="#newstudent-form" class="student">NEW STUDENT</a>
+                    <a href="#existingstudent-form" class="existingstudent">EXISTING STUDENT</a>
+                    <a href="#admin-form" class="admin">ADMIN</a>
+                </div>
+            </header>
+            <main>
+                <div class="webform-types">
+                    <form action="" id="newstudent-form" class="newstudent-form">
+                        <div class="details-and-courses">
+                            <div class="details">
+                                <h2>Details</h2>
+                                <p>fill-out the form for new enrollees.</p>
+                                <label for="student-surname">Last Name: <input type="text" placeholder="Student Last name" required id="student-surname"> </label> 
+                                <label for="student-firstname">First Name: <input type="text" placeholder="Student First name" required id="student-firstname"> </label>
+                                <label for="student-middlename">Middle Name: <input type="text" placeholder="Student Full Middle name" required id="student-middlename"></label>
+                                <label for="student-middlename">Contact Number: <input type="text" placeholder="ex. 0987XXXXXXX" required id="student-contactnumber"></label>
+                                <label for="student-middlename">Active Email Address: <input type="email" placeholder="ex. ArellanoUniversityJRC@gmail.com" required id="student-contactnumber"></label>
+                                <label for="student-middlename">Facebook Account Link: <input type="text" placeholder="ex. facebook.com/ArellanoUniversity" required id="student-contactnumber"></label>
+                            </div>
+                            <div class="courses">
+                                <h2>Courses</h2>
+                                <p></p>
+                                <label for="student-surname">Last Name: <input type="text" placeholder="Student Last name" required id="student-surname"> </label> 
+                                <label for="student-firstname">First Name: <input type="text" placeholder="Student First name" required id="student-firstname"> </label>
+                                <label for="student-middlename">Middle Name: <input type="text" placeholder="Student Full Middle name" required id="student-middlename"></label>
+                                <label for="student-middlename">Contact Number: <input type="text" placeholder="ex. 0987XXXXXXX" required id="student-contactnumber"></label>
+                                <label for="student-middlename">Active Email Address: <input type="email" placeholder="ex. ArellanoUniversityJRC@gmail.com" required id="student-contactnumber"></label>
+                                <label for="student-middlename">Facebook Account Link: <input type="text" placeholder="ex. facebook.com/ArellanoUniversity" required id="student-contactnumber"></label>
+                            </div>
+                        </div>
+                        <input type="submit" value="Submit">
+                    </form>
+    
+                    <form action="" id="existingstudent-form" class="existingstudent-form">
+                        <label for="student-surname">Student No: <input type="text" placeholder="Enter your student number" required id="student-surname"> </label> 
+                        <label for="student-lastname">Last Name: <input type="text" placeholder="Student Last name" required id="student-firstname"> </label>
+                        <label for="student-middlename">First Name: <input type="text" placeholder="Student First name" required id="student-middlename"></label>
+                        <input type="submit" value="Next">
+                    </form>
+    
+                    <form action="" id="admin-form" class="admin-form">
+                        <h2>Admin</h2>
+                        <label>Username: <input type="text" placeholder="Admin Form" name="admin-username" required></label>
+                        <label>Password: <input type="password" placeholder="Admin Form" name="admin-password" required></label>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+/* BODY */
+body
+{
+    background-image: url(https://www.arellano.edu.ph/sites/default/files/inline-images/au-malabon-rizal.jpg);
+    background-size: cover;
+    margin: 0;
+}
+
+.background-overlay
+{
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(117, 142, 255, 0.26),rgba(0, 16, 87, 0.904));
+    z-index: -1;
+    position: fixed;
+}
+
+.aulogo
+{
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+}
+
+/* --- DEFAULT FORM BEHAVIOR --- */
+.newstudent-form, .admin-form, .existingstudent-form
+{
+    display:none;
+}
+
+.newstudent-form:target, .admin-form:target, .existingstudent-form:target
+{
+    display: inline;
+}
+
+/* WEBFORM HEADER*/
+.webform-header
+{
+    display: flex;
+}
+
+.webform-header h1
+{
+    font-size: max(1, 2rem);
+    margin: 3rem auto;
+    font-family: Georgia, serif;
+    color: azure;
+    font-weight: 900;
+    font-size: 45px;
+    text-align: center;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+/* --- WEBFORM --- */
+.webform
+{
+    margin: 5em auto;
+    width: 72vw;
+    max-width: 1400px;
+    height: 100vh;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* --- WEBFORM MENU --- */
+.webform-menu
+{
+    max-width: 1300;
+    display: flex;
+    padding: 5px auto;
+    background-color: var(--secondary-color);
+    gap: 4.5rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 7px var(--secondary-color-dark);
+}
+
+.webform-menu a
+{
+    font-family: Tahoma, sans-serif;
+    color: rgb(230, 240, 255);
+    font-size: 20px;
+    font-weight: 800;
+    padding: 15px 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.webform-menu a:hover
+{
+    background-color: var(--secondary-color-dark);
+    border-radius: 10px 0 10px 0;
+    transform: scale(1.1);
+}
+
+/* --- WEBFORM TYPES --- */
+.webform-types
+{
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 70vw;
+    max-width: 1300px;
+    height: 350px;
+    margin: 1.5rem auto;
+    gap: 5rem;
+}
+
+.webform-types label
+{
+    padding: 5px 10px;
+    display: block;
+    margin-top: 1em;
+}
+
+
+.webform-types input[type="submit"]
+{
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 3rem;
+    border:none;
+    font-weight: 900;
+    margin-top: 1.3em;
+}
+
+.webform-types input[type="submit"]:hover
+{
+    background-color: var(--secondary-color-dark);
+    border:none;
+}
+
+/* --- ADMIN FORM --- */
+.admin-form
+{
+    margin: 0 auto;
+}
+
+.admin-form h2
+{
+    text-align: center;
+    font-family: helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.admin-form input:not(.admin-form input[type="submit"])
+{
+    padding: 5px 20px;
+    border: 1px solid gray;
+}
+
+.admin-form label
+{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.admin-form h2
+
+/* --- EXISTING STUDENT FORM --- */
+.existingstudent-form
+{
+    margin: 0 auto;
+}
+
+/* --- NEW STUDENT FORM --- */
+
+.newstudent-form h2, .newstudent-form p
+{
+    margin-left: 0.5rem;
+    font-family: Helvetica;
+}
+.newstudent-form h2
+{
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color-subheading);
+}
+.newstudent-form p
+{
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.582);
+}
+.newstudent-form label
+{
+    display: grid;
+    grid: 120px;
+}
+
+.newstudent-form 
+{
+    width: 70vw;
+}
+
+.newstudent-form input
+{
+    width:45%;
+    display: inline;
+}
+
+  
+
+/* --- DEFAULT VARIABLES / Behaviors --- */
+:root
+{
+    --primary-color: rgb(0, 91, 211);
+    --primary-color-leadheading:rgb(0, 53, 122);
+    --primary-color-subheading:rgb(33, 109, 209);
+    --secondary-color: rgb(243, 55, 55);
+    --secondary-color-dark: rgb(233, 23, 23);
+}
+
+.admin-form label, .newstudent-form label, .existingstudent-form label
+{
+    font-family: Helvetica, sans-serif;
+}
